@@ -15,6 +15,9 @@
 This tutorial will walk you through step by step how to develop, test, and deploy your first Mule Application in just a few minutes!<br><br>
 </h3>
 
+
+
+
 ## Tutorial and Video
 
 For a step by step tutorial navigate to the MuleSoft developer website [here](https://developer.mulesoft.com/tutorials-and-howtos/getting-started/hello-mule/).
