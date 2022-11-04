@@ -47,7 +47,7 @@
 
             <environment>Sandbox</environment>
 
-            <applicationName>hellomule</applicationName>
+            <applicationName>hello-mule</applicationName>
 			<objectStoreV2>true</objectStoreV2>
         </cloudHubDeployment>
 
