@@ -30,73 +30,66 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				 <configuration>
-7
+
         <cloudHubDeployment>
-8
+
             <uri>https://anypoint.mulesoft.com</uri>
-9
-            <muleVersion>${app.runtime}</muleVersion>
-10
-            <username>${anypoint.username}</username>
-11
+
+        <muleVersion>${app.runtime}</muleVersion>
+
+           <username>${anypoint.username}</username>
+
             <password>${anypoint.password}</password>
-12
+
             <businessGroup>Deloitte</businessGroup>
-13
+
             <workers>default</workers>
-14
-            <workerType>default</workerType>
-15
+        <workerType>default</workerType>
+
             <region>us-west-1</region>
-16
+
             <environment>${environment}</environment>
-17
+
             <applicationName>${applicationName}</applicationName>
-18
+
             <properties>
-19
+
                 <mule.env>${mule.env}</mule.env>
-20
+
                 <encrypt.key>${encrypt.key}</encrypt.key>                   
 				<anypoint.platform.client_id>${anypoint.platform.client_id}     </anypoint.platform.client_id>      
 				<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
-21
+
                 <api.id>${ilg.api.version}</api.id>
-22
+
     <anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
-23
+
             </properties>
-24
         </cloudHubDeployment>
-25
-                    <executions>
-26
+
+                <executions>
+
                         <execution>
-27
                             <id>deploy</id>
-28
+
                             <goals>
-29
+
                                 <goal>deploy</goal>
-30
                             </goals>
-31
+
                             <configuration>
-32
+
                                 <classifier>mule-application</classifier>
-33
                             </configuration>
-34
-                        </execution>
-35
+                    </execution>
+
                     </executions>
-36
+
                     
-37
-                            <classifier>mule-application</classifier>
-38
+                          <classifier>mule-application</classifier>
+
                 </configuration>
-39
+
             </plugin>
 			</plugin>
 		</plugins>
