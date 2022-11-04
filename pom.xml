@@ -43,28 +43,11 @@
 
             <businessGroup>Deloitte</businessGroup>
 
-            <workers>default</workers>
-        <workerType>default</workerType>
+       	 	<workerType>SMALL</workerType>
 
-            <region>us-west-1</region>
+            <environment>Sandbox</environment>
 
-            <environment>${environment}</environment>
-
-            <applicationName>${applicationName}</applicationName>
-
-            <properties>
-
-                <mule.env>${mule.env}</mule.env>
-
-                <encrypt.key>${encrypt.key}</encrypt.key>                   
-				<anypoint.platform.client_id>${anypoint.platform.client_id}     </anypoint.platform.client_id>      
-				<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
-
-                <api.id>${ilg.api.version}</api.id>
-
-    <anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
-
-            </properties>
+            <applicationName>Hellomule</applicationName>
         </cloudHubDeployment>
 
                 <executions>
