@@ -49,4 +49,4 @@ steps:
     mavenVersionOption: 'Default'
     effectivePomSkip: true
     sonarQubeRunAnalysis: false
-    goals: 'clean install package deploy $(MAVEN_OPTS)  -DmuleDeploy -Dserver=$(server) -Denvironment=SANDBOX'
+    goals:  'clean install package deploy $(MAVEN_OPTS)  -DmuleDeploy -Denvironment=$(environment) -Dapp.runtime=$(app.runtime) -DapplicationName=$(applicationName)'
