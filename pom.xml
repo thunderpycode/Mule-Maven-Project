@@ -34,8 +34,7 @@
         <cloudHubDeployment>
 
             <uri>https://anypoint.mulesoft.com</uri>
-		 <server>Exchange2abhi12220</server>
-
+	
         <muleVersion>4.3.0</muleVersion>
 
            <username>${anypoint.username}</username>
