@@ -50,9 +50,17 @@
             <applicationName>hello-mule</applicationName>
 			<region>us-east-2</region>
 
-			<authToken>0f4fb93b-8a66-4581-848a-721758058058</authToken>
+			<authToken>268fbea9-1755-4d63-9a69-eddeb468403c</authToken>
+			 <properties>
 
-			<!--<objectStoreV2>true</objectStoreV2>-->
+                <mule.env>Sandbox</mule.env>                 
+				<anypoint.platform.client_id>8f0fe3ebb22344eab139900010effe52</anypoint.platform.client_id>      
+				<anypoint.platform.client_secret>b70E7562Af134549Ad3e642065D04C59</anypoint.platform.client_secret>
+				<anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
+
+            </properties>
+
+			<objectStoreV2>true</objectStoreV2>
         </cloudHubDeployment>
 
                 <executions>
