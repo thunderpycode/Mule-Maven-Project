@@ -27,7 +27,7 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>3.5.4</version>
 				<extensions>true</extensions>
 				 <configuration>
 
@@ -48,7 +48,9 @@
             <environment>Sandbox</environment>
 
             <applicationName>hello-mule</applicationName>
-			 <authToken>4267978b-d0a6-47d6-9e6b-0c49a3f9e474</authToken>
+			<region>us-east-2</region>
+
+			<authToken>0f4fb93b-8a66-4581-848a-721758058058</authToken>
 
 			<!--<objectStoreV2>true</objectStoreV2>-->
         </cloudHubDeployment>
@@ -118,6 +120,11 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
+		<pluginRepository>
+            <id>mule-public</id>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+        </pluginRepository>
+
 	</pluginRepositories>
 
 </project>
