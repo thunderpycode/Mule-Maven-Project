@@ -56,6 +56,7 @@
                 <mule.env>Sandbox</mule.env>                 
 				<anypoint.platform.client_id>${client_id}</anypoint.platform.client_id>      
 				<anypoint.platform.client_secret>${client_secret}</anypoint.platform.client_secret>
+				 <anypoint.platform.grant_type>${grant_type}</anypoint.platform.grant_type>
 				
 				<anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
 
