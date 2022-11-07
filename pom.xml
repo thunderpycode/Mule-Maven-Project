@@ -48,6 +48,8 @@
             <environment>Sandbox</environment>
 
             <applicationName>hello-mule</applicationName>
+			 <authToken>4267978b-d0a6-47d6-9e6b-0c49a3f9e474</authToken>
+
 			<!--<objectStoreV2>true</objectStoreV2>-->
         </cloudHubDeployment>
 
