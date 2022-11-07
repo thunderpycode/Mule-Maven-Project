@@ -50,7 +50,7 @@
             <applicationName>hello-mule</applicationName>
 			<region>us-east-2</region>
 
-			<authToken>268fbea9-1755-4d63-9a69-eddeb468403c</authToken>
+		<!--	<authToken>268fbea9-1755-4d63-9a69-eddeb468403c</authToken>-->
 			 <properties>
 
                 <mule.env>Sandbox</mule.env>                 
