@@ -53,26 +53,23 @@
 			<!--<objectStoreV2>true</objectStoreV2>-->
         </cloudHubDeployment>
 
-          <!--      <executions>
+                <executions>
 
-                        <execution>
-                            <id>deploy</id>
-
+                       <execution>
+                      <id>deploy</id>
                             <goals>
 
                                 <goal>deploy</goal>
+
                             </goals>
-
-                            <configuration>
-
+                          <configuration>
                                 <classifier>mule-application</classifier>
                             </configuration>
-                    </execution>
 
+                        </execution>
                     </executions>
-
                     
-                          <classifier>mule-application</classifier>-->
+                            <classifier>mule-application</classifier>
 
                 </configuration>
 
