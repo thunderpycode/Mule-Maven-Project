@@ -48,10 +48,10 @@
             <environment>Sandbox</environment>
 
             <applicationName>hello-mule</applicationName>
-			<objectStoreV2>true</objectStoreV2>
+			<!--<objectStoreV2>true</objectStoreV2>-->
         </cloudHubDeployment>
 
-                <executions>
+          <!--      <executions>
 
                         <execution>
                             <id>deploy</id>
@@ -70,7 +70,7 @@
                     </executions>
 
                     
-                          <classifier>mule-application</classifier>
+                          <classifier>mule-application</classifier>-->
 
                 </configuration>
 
