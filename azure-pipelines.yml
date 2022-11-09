@@ -49,4 +49,4 @@ steps:
     mavenVersionOption: 'Default'
     effectivePomSkip: true
     sonarQubeRunAnalysis: false
-    goals:  'clean install package deploy $(MAVEN_OPTS)  -DmuleDeploy -Denvironment=$(environment) -Dapp.runtime=$(app.runtime) -DapplicationName=$(applicationName)'
+    goals: 'clean install package deploy $(MAVEN_OPTS)  -DmuleDeploy -Dserver=Exchange2abhi122201 -Denvironment=Sandbox -Dworker=SMALL -Dapp.runtime=4.3.0 -DapplicationName=hellomule -Danypoint.platform.client_id=$(client_id) -Danypoint.platform.client_secret=$(client_secret) -Danypoint.platform.grant_type=client_credentials'
