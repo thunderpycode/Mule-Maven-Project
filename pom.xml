@@ -43,7 +43,6 @@
             <businessGroup>Deloitte</businessGroup>
 
        	 	<workerType>SMALL</workerType>
-
             <environment>Sandbox</environment>
 
             <applicationName>hello-mule</applicationName>
