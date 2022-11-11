@@ -52,7 +52,7 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 
 						<muleVersion>4.4.0-20220622</muleVersion>
-						<target>Exchange-abhi20021997</target>
+						<!--<target>Exchange-abhi20021997</target>-->
   						<targetType>server</targetType>
 
 						<username>${anypoint.username}</username>
