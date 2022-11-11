@@ -50,6 +50,7 @@
 					<cloudHubDeployment>
 
 						<uri>https://anypoint.mulesoft.com</uri>
+						<encryption.key>${encryptionKey}</encryption.key>
 
 						<muleVersion>4.4.0-20220622</muleVersion>
 						<target>mule-cluster</target>
