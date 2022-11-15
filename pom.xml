@@ -62,7 +62,7 @@
 						<!--<businessGroup>Deloitte</businessGroup>-->
 
 						<workerType>SMALL</workerType>
-						<environment>SANDBOX</environment>
+						<environment>Sandbox</environment>
 
 						<applicationName>hellomule</applicationName>
 						<!--<region>us-east-2</region>-->
@@ -70,7 +70,7 @@
 						<!--	<authToken>268fbea9-1755-4d63-9a69-eddeb468403c</authToken>-->
 						<properties>
 
-							<mule.env>SANDBOX</mule.env>
+							<mule.env>Sandbox</mule.env>
 							<anypoint.platform.client_id>${client_id}</anypoint.platform.client_id>
 							<anypoint.platform.client_secret>${client_secret}</anypoint.platform.client_secret>
 							<anypoint.platform.grant_type>${grant_type}</anypoint.platform.grant_type>
