@@ -60,13 +60,13 @@
 
 						<password>${anypoint.password}</password>
 
-						<!--<businessGroup>Deloitte</businessGroup>-->
+						<businessGroup>Deloitte</businessGroup>
 
 						<workerType>SMALL</workerType>
 						<environment>sandbox</environment>
 
 						<applicationName>hello-mule</applicationName>
-						<region>us-east-2</region>
+						<!--<region>us-east-2</region>-->
 
 						<!--	<authToken>268fbea9-1755-4d63-9a69-eddeb468403c</authToken>-->
 						<properties>
