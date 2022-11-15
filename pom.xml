@@ -53,14 +53,14 @@
 						<!--<encrypt.key>${encrypt.key}</encrypt.key>-->
 
 						<muleVersion>4.4.0-20220622</muleVersion>
-						<target>mule-app</target>
-  						<targetType>cluster</targetType>
+						<!--<target>mule-app</target>
+  						<targetType>cluster</targetType>-->
 
 						<username>${anypoint.username}</username>
 
 						<password>${anypoint.password}</password>
 
-						<businessGroup>Deloitte</businessGroup>
+						<!--<businessGroup>Deloitte</businessGroup>-->
 
 						<workerType>SMALL</workerType>
 						<environment>sandbox</environment>
