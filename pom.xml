@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mycompany</groupId>
 	<artifactId>hellomule</artifactId>
@@ -10,12 +11,29 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.3.0</app.runtime>
+		<app.runtime>4.4.0-20220622</app.runtime>
 		<mule.maven.plugin.version>3.5.4</mule.maven.plugin.version>
 	</properties>
 
 	<build>
 		<plugins>
+			<!--<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.1</version>
+			</plugin>-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+
+
+		<!--	<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
@@ -26,63 +44,67 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>3.5.4</version>
 				<extensions>true</extensions>
-				 <configuration>
+				<configuration>
 
-        <cloudHubDeployment>
+					<cloudHubDeployment>
 
-            <uri>https://anypoint.mulesoft.com</uri>
-	
-        <muleVersion>4.3.0</muleVersion>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<!--<encrypt.key>${encrypt.key}</encrypt.key>-->
 
-           <username>${anypoint.username}</username>
+						<muleVersion>4.4.0-20220622</muleVersion>
+						
 
-            <password>${anypoint.password}</password>
+						<username>${anypoint.username}</username>
 
-            <businessGroup>Deloitte</businessGroup>
+						<password>${anypoint.password}</password>
 
-       	 	<workerType>SMALL</workerType>
-            <environment>Sandbox</environment>
+						<!--<businessGroup>Deloitte</businessGroup>-->
 
-            <applicationName>hello-mule</applicationName>
-			<region>us-east-2</region>
+						<workerType>SMALL</workerType>
+						<environment>Sandbox</environment>
 
-		<!--	<authToken>268fbea9-1755-4d63-9a69-eddeb468403c</authToken>-->
-			 <properties>
+						<applicationName>hellomule</applicationName>
+						<!--<region>us-east-2</region>-->
 
-                <mule.env>Sandbox</mule.env>                 
-				<anypoint.platform.client_id>${client_id}</anypoint.platform.client_id>      
-				<anypoint.platform.client_secret>${client_secret}</anypoint.platform.client_secret>
-				 <anypoint.platform.grant_type>${grant_type}</anypoint.platform.grant_type>
-				
-				<anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
+						<!--	<authToken>268fbea9-1755-4d63-9a69-eddeb468403c</authToken>-->
+						<properties>
 
-            </properties>
+							<mule.env>Sandbox</mule.env>
+							<anypoint.platform.client_id>${client_id}</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>${client_secret}</anypoint.platform.client_secret>
+							<anypoint.platform.grant_type>${grant_type}</anypoint.platform.grant_type>
+							<target>mule-app</target>
+  							<targetType>cluster</targetType>
+							<anypoint.platform.config.analytics.agent.enabled>true
+							</anypoint.platform.config.analytics.agent.enabled>
 
-			<objectStoreV2>true</objectStoreV2>
-        </cloudHubDeployment>
+						</properties>
 
-                <executions>
+						<objectStoreV2>true</objectStoreV2>
+					</cloudHubDeployment>
 
-                       <execution>
-                      <id>deploy</id>
-                            <goals>
+					<executions>
 
-                                <goal>deploy</goal>
+						<execution>
+							<id>deploy</id>
+							<goals>
 
-                            </goals>
-                          <configuration>
-                                <classifier>mule-application</classifier>
-                            </configuration>
+								<goal>deploy</goal>
 
-                        </execution>
-                    </executions>
-                    
-                            <classifier>mule-application</classifier>
+							</goals>
+							<configuration>
+								<classifier>mule-application</classifier>
+							</configuration>
 
-                </configuration>
+						</execution>
+					</executions>
 
-            </plugin>
-		
+					<classifier>mule-application</classifier>
+
+				</configuration>
+
+			</plugin>
+
 		</plugins>
 	</build>
 
@@ -127,9 +149,9 @@
 			</snapshots>
 		</pluginRepository>
 		<pluginRepository>
-            <id>mule-public</id>
-            <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
-        </pluginRepository>
+			<id>mule-public</id>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+		</pluginRepository>
 
 	</pluginRepositories>
 
