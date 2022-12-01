@@ -41,69 +41,46 @@
 				<version>3.0.0</version>
 			</plugin>
 			<plugin>
+
+				<plugin>
+
 				<groupId>org.mule.tools.maven</groupId>
+
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.5.4</version>
+
+				<version>${mule.maven.plugin.version}</version>
+
 				<extensions>true</extensions>
+
 				<configuration>
 
-					<cloudHubDeployment>
+				<cloudHubDeployment>
 
-						<uri>https://anypoint.mulesoft.com</uri>
-						<!--<encrypt.key>${encrypt.key}</encrypt.key>-->
+				<uri>https://anypoint.mulesoft.com/</uri>
 
-						<muleVersion>4.4.0-20220622</muleVersion>
-						
+				<muleVersion>${app.runtime}</muleVersion>
 
-						<username>${anypoint.username}</username>
+				<username>${username}</username>
 
-						<password>${anypoint.password}</password>
+				<password>${password}</password>
 
-						<!--<businessGroup>Deloitte</businessGroup>-->
+				<applicationName>${project.artifactId}</applicationName>
 
-						<workerType>SMALL</workerType>
-						<environment>Sandbox</environment>
+				<environment>Sandbox</environment>
 
-						<applicationName>hellomulefeb1997</applicationName>
-						<!--<region>us-east-2</region>-->
+				<workerType>${workerType}</workerType>
 
-						<!--	<authToken>268fbea9-1755-4d63-9a69-eddeb468403c</authToken>-->
-						<properties>
+				<workers>1</workers>
 
-							<mule.env>Sandbox</mule.env>
-							<anypoint.platform.client_id>${client_id}</anypoint.platform.client_id>
-							<anypoint.platform.client_secret>${client_secret}</anypoint.platform.client_secret>
-							<anypoint.platform.grant_type>${grant_type}</anypoint.platform.grant_type>
-							<target>mule-app</target>
-  							<targetType>cluster</targetType>
-							<anypoint.platform.config.analytics.agent.enabled>true
-							</anypoint.platform.config.analytics.agent.enabled>
+				<objectStoreV2>true</objectStoreV2>
 
-						</properties>
+				<region> ${region} </region>
 
-						<objectStoreV2>true</objectStoreV2>
-					</cloudHubDeployment>
-
-					<executions>
-
-						<execution>
-							<id>deploy</id>
-							<goals>
-
-								<goal>deploy</goal>
-
-							</goals>
-							<configuration>
-								<classifier>mule-application</classifier>
-							</configuration>
-
-						</execution>
-					</executions>
-
-					<classifier>mule-application</classifier>
+				</cloudHubDeployment>
 
 				</configuration>
 
+				</plugin>
 			</plugin>
 
 		</plugins>
